@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+int main ();
+{int N,i;
+cout<<"Ingrese el numero N hasta el que desea conocer los numeros naturles";
+cin>>N;
+for(i=0;i<N;i++)
+{cout<<i;
+}
+getch();
+return 0;
+}
