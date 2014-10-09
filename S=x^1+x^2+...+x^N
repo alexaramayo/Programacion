@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+{float x,N,i,S;
+cout<<"Ingrese el exponente N"<<endl;
+cin>>N;
+cout<<"Ingrese la base x"<<endl;
+cin>>x;
+S=0;
+i=1;
+while(i<=N)
+{S=S+pow(x,N);
+i=i+1;
+}
+cout<<"LA suma es :"<<S;
+getch();
+}
