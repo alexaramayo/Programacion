@@ -1,0 +1,24 @@
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+using namespace std;
+
+void main()
+{float S,x,Fact,n,i;
+cout<<"Ingrese la base"<<endl;
+cin>>x;
+cout<<"Ingrese el enesimo termino"<<endl;
+cin>>n;
+S=5;
+Fact=1;
+i=2;
+while(i<=n)
+{Fact=Fact*(i-1)*i;
+S=S+powf(x,i)/Fact;
+i=i+2;
+ }
+cout<<"La sumatoria es :"<<S<<endl;
+getch();
+}
