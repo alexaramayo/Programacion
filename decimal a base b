@@ -1,0 +1,24 @@
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+using namespace std;
+  
+void main()
+{int s,b,i,N,S,d;
+ cout<<"Ingrese el numero"<<endl;
+  cin>>N;
+ cout<<"Ingrese la base"<<endl;
+  cin>>b;
+  i=0;
+  s=0;
+    while(N!=0)
+    {d=N%b;
+     N=N/b;
+	 s=s+d*powf(10,i);
+	 i=i+1;
+     }
+	cout<<"El nuevo numero es :"<<s;
+getch();
+}
